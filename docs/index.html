@@ -31,8 +31,61 @@
 
   <title>scom_ec</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff0000, #000000);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .loading-container {
+      text-align: center;
+      color: white;
+    }
+    .loading-icon {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    .loading-text {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .loading-subtitle {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+    }
+    #flutter-loader {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <div id="loading-screen" class="loading-container">
+    <img src="scomicon.png" alt="Loading..." class="loading-icon">
+    <div class="loading-text">SCOM 2025</div>
+    <div class="loading-subtitle">Loading voting system...</div>
+  </div>
+  <div id="flutter-loader">
+    <script src="flutter_bootstrap.js" async></script>
+  </div>
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.getElementById('loading-screen').style.display = 'none';
+        document.getElementById('flutter-loader').style.display = 'block';
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
