@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "146506278502",
+    "project_id": "scom-voting-system",
+    "storage_bucket": "scom-voting-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146506278502:android:51f04abbf0c206375eafa7",
+        "android_client_info": {
+          "package_name": "com.example.scom_ec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATIGBCcwYegWF3-xkjEMieAyGKuDm8EjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
