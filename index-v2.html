@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/scom_ec/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="scom_ec">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>scom_ec - Updated</title>
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Firebase SDK - Latest Version -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyATIGBCcwYegWF3-xkjEMieAyGKuDm8EjU",
+      authDomain: "scom-voting-system.firebaseapp.com",
+      projectId: "scom-voting-system",
+      storageBucket: "scom-voting-system.firebasestorage.app",
+      messagingSenderId: "146506278502",
+      appId: "1:146506278502:web:YOUR_WEB_APP_ID"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    firebase.firestore();
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js?v=20250119" async></script>
+</body>
+</html>
